@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 
 const Root = () => {
     return (
-        <div className='relative'>
+        <div className=''>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Gallery></Gallery>
