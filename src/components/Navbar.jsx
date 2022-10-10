@@ -5,7 +5,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen shadow-lg md:px-24 lg:px-8">
+        <div className="static top-0 z-10 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen shadow-lg md:px-24 lg:px-8">
             <div className="relative flex items-center justify-between">
                 <a
                     href="/"
@@ -66,7 +66,7 @@ const Navbar = () => {
                             title="About"
                             className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
                         >
-                            About
+                            About Us
                         </NavLink>
                     </li>
                 </ul>
@@ -103,23 +103,9 @@ const Navbar = () => {
                                             title="Company"
                                             className="inline-flex items-center"
                                         >
-                                            <svg
-                                                className="w-8 text-deep-purple-accent-400"
-                                                viewBox="0 0 24 24"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                strokeLinecap="round"
-                                                strokeMiterlimit="10"
-                                                stroke="currentColor"
-                                                fill="none"
-                                            >
-                                                <rect x="3" y="1" width="7" height="12" />
-                                                <rect x="3" y="17" width="7" height="6" />
-                                                <rect x="14" y="1" width="7" height="6" />
-                                                <rect x="14" y="11" width="7" height="12" />
-                                            </svg>
-                                            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                Company
+                                            <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/48482230db0c4d1ac6e61fc06543ba59" className='h-10' alt="No Image" />
+                                            <span className="ml-2 text-xl font-bold tracking-wide text-blue-600 uppercase">
+                                                jch Quiz contest
                                             </span>
                                         </a>
                                     </div>
@@ -142,44 +128,54 @@ const Navbar = () => {
                                 <nav>
                                     <ul className="space-y-4">
                                         <li>
-                                            <a
-                                                href="/"
-                                                aria-label="Our product"
-                                                title="Our product"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                            <NavLink
+                                                to="/home"
+                                                aria-label="Home"
+                                                title="Home"
+                                                className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
                                             >
-                                                Product
-                                            </a>
+                                                Home
+                                            </NavLink>
                                         </li>
                                         <li>
-                                            <a
-                                                href="/"
-                                                aria-label="Our product"
-                                                title="Our product"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                            <NavLink
+                                                to="/topic"
+                                                aria-label="Topic"
+                                                title="Topic"
+                                                className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
                                             >
-                                                Features
-                                            </a>
+                                                Topic
+                                            </NavLink>
                                         </li>
                                         <li>
-                                            <a
-                                                href="/"
-                                                aria-label="Product pricing"
-                                                title="Product pricing"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                            <NavLink
+                                                to="/statistic"
+                                                aria-label="Statistic"
+                                                title="Statistic"
+                                                className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
                                             >
-                                                Pricing
-                                            </a>
+                                                Statistic
+                                            </NavLink>
                                         </li>
                                         <li>
-                                            <a
-                                                href="/"
-                                                aria-label="About us"
-                                                title="About us"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                            <NavLink
+                                                to="/blog"
+                                                aria-label="Blog"
+                                                title="Blog"
+                                                className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
                                             >
-                                                About us
-                                            </a>
+                                                Blog
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/about"
+                                                aria-label="About"
+                                                title="About"
+                                                className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
+                                            >
+                                                About Us
+                                            </NavLink>
                                         </li>
                                     </ul>
                                 </nav>
