@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Blog from "../components/Blog";
 import Error from "../components/Error";
 import Root from "../MainLayout/Root";
 
@@ -12,7 +13,7 @@ export const router = createBrowserRouter([
         children : [
             {
                 path : 'blog',
-                
+                element : <Blog></Blog>
             },
             {
                 path : 'about',
