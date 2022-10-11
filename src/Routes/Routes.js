@@ -1,6 +1,7 @@
 import About from "../components/About";
 import Blog from "../components/Blog";
 import Error from "../components/Error";
+import Home from "../components/Home";
 import Root from "../MainLayout/Root";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -11,6 +12,14 @@ export const router = createBrowserRouter([
         element : <Root></Root>,
         errorElement : <Error></Error>,
         children : [
+            {
+                path : '/',
+                element : <Home></Home>
+            },
+            {
+                path : 'home',
+                element : <Home></Home>
+            },
             {
                 path : 'blog',
                 element : <Blog></Blog>
