@@ -31,16 +31,6 @@ const Navbar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to="/topic"
-                            aria-label="Topic"
-                            title="Topic"
-                            className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
-                        >
-                            Topic
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
                             to="/statistic"
                             aria-label="Statistic"
                             title="Statistic"
@@ -135,16 +125,6 @@ const Navbar = () => {
                                                 className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
                                             >
                                                 Home
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink
-                                                to="/topic"
-                                                aria-label="Topic"
-                                                title="Topic"
-                                                className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
-                                            >
-                                                Topic
                                             </NavLink>
                                         </li>
                                         <li>
