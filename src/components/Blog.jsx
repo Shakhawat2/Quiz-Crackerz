@@ -2,136 +2,57 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-                <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                    <div>
-                        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                            Brand new
-                        </p>
-                    </div>
-                    <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-                        <span className="relative inline-block">
-                            <svg
-                                viewBox="0 0 52 24"
-                                fill="currentColor"
-                                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                            >
-                                <defs>
-                                    <pattern
-                                        id="70326c9b-4a0f-429b-9c76-792941e326d5"
-                                        x="0"
-                                        y="0"
-                                        width=".135"
-                                        height=".30"
-                                    >
-                                        <circle cx="1" cy="1" r=".7" />
-                                    </pattern>
-                                </defs>
-                                <rect
-                                    fill="url(#70326c9b-4a0f-429b-9c76-792941e326d5)"
-                                    width="52"
-                                    height="24"
-                                />
-                            </svg>
-                            <span className="relative">The</span>
-                        </span>{' '}
-                        quick, brown fox jumps over a lazy dog
-                    </h2>
-                    <p className="text-base text-gray-700 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae.
-                    </p>
+        <section className="dark:bg-gray-800 dark:text-gray-100">
+            <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
+                <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">How it works</p>
+                <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">Frequently Asked Questions</h2>
+                <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+                    <details open="">
+                        <summary className="py-2 outline-none cursor-pointer focus:underline">What is the Purpose of React-router-dom?</summary>
+                        <div className="px-4 pb-4">
+                            <p>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. <br /><br />
+                                Let us create a simple application to React to understand how the React Router works. The application will contain three components: home component, about a component, and contact component. We will use React Router to navigate between these components.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary className="py-2 outline-none cursor-pointer focus:underline">How does Context API works?</summary>
+                        <div className="px-4 pb-4">
+                            <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary className="py-2 outline-none cursor-pointer focus:underline">What is UseRef in react?</summary>
+                        <div className="px-4 pb-4 space-y-2">
+                            <p>Essentially, useRef is like a “box” that can hold a mutable value in its .current property. You might be familiar with refs primarily as a way to access the DOM. If you pass a ref object to React with, React will set its .current property to the corresponding DOM node whenever that node changes.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary className="py-2 outline-none cursor-pointer focus:underline">What is Custom Hook in react?</summary>
+                        <div className="px-4 pb-4 space-y-2">
+                            <p>Custom React JS hooks are reusable functions that a React JS software developer can use to add special and unique functionality to the React applications. Usually, if there is a requirement to add a feature, one can install a third-party library and solve the problem.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary className="py-2 outline-none cursor-pointer focus:underline">How many ways can we implement Conditional rendering in React?</summary>
+                        <div className="px-4 pb-4 space-y-2">
+                            <p>Six methods to achieve conditional rendering in React. <br /><br /> 1. if/else <br />2. Ternary operation <br /> 3. Inline IF with Logical && operator <br /> 4. Switch case operator <br />5. Conditional Rendering with enums <br />6. Higher-Order Components</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary className="py-2 outline-none cursor-pointer focus:underline">Can you explain how the Provider works with the React Context API?</summary>
+                        <div className="px-4 pb-4 space-y-2">
+                            <p>Every Context object comes with a Provider React component that allows consuming components to subscribe to context changes. The Provider component accepts a value prop to be passed to consuming components that are descendants of this Provider. One Provider can be connected to many consumers.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary className="py-2 outline-none cursor-pointer focus:underline">How is React Routing different from Conventional routing?</summary>
+                        <div className="px-4 pb-4 space-y-2">
+                            <p>React Router is a library for React that provides routing functionality. It is different from conventional routing in a few ways. <br /><br /> First, React Router is declarative. This means that you specify what you want your route to look like, rather than specifying how to get there. This makes it more user-friendly and easier to read. <br /><br /> Second, React Router is modular. This means that you can use only the features you need, rather than having to include everything in the library. This makes it more lightweight and efficient. <br /><br /> Third, React Router is asynchronous. This means that routes can be loaded on-demand, rather than all at once. This makes the application more responsive and efficient. <br /><br /> Fourth, React Router is composable. This means that you can create complex routes by combining multiple routes together. This makes the routing process more flexible. <br /><br/> Example: Now we are going to use React router to add routing in our app. For this, we will create a new ‘pages’ directory in our ‘src’  folder. Inside this newly created directory, we will create two JavaScript files ‘Home.js’ and ‘Data.js’ with the below content.</p>
+                        </div>
+                    </details>
                 </div>
             </div>
-            <div className="max-w-screen-xl sm:mx-auto">
-                <div className="grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2">
-                    <div className="space-y-8">
-                        <div>
-                            <p className="mb-4 text-xl font-medium">
-                                The quick, brown fox jumps over a lazy dog?
-                            </p>
-                            <p className="text-gray-700">
-                                Space, the final frontier. These are the voyages of the Starship
-                                Enterprise. Its five-year mission: to explore strange new
-                                worlds.
-                                <br />
-                                <br />
-                                Many say exploration is part of our destiny, but it’s actually
-                                our duty to future generations.
-                            </p>
-                        </div>
-                        <div>
-                            <p className="mb-4 text-xl font-medium">
-                                The first mate and his Skipper too will do?
-                            </p>
-                            <p className="text-gray-700">
-                                Well, the way they make shows is, they make one show. That
-                                show's called a pilot.
-                                <br />
-                                <br />
-                                Then they show that show to the people who make shows, and on
-                                the strength of that one show they decide if they're going to
-                                make more shows. Some pilots get picked and become television
-                                programs.Some don't, become nothing. She starred in one of the
-                                ones that became nothing.
-                            </p>
-                        </div>
-                        <div>
-                            <p className="mb-4 text-xl font-medium">
-                                Is the Space Pope reptilian!?
-                            </p>
-                            <p className="text-gray-700">
-                                A flower in my garden, a mystery in my panties. Heart attack
-                                never stopped old Big Bear. I didn't even know we were calling
-                                him Big Bear.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="space-y-8">
-                        <div>
-                            <p className="mb-4 text-xl font-medium">
-                                How much money you got on you?
-                            </p>
-                            <p className="text-gray-700">
-                                The first mate and his Skipper too will do their very best to
-                                make the others comfortable in their tropic island nest.
-                                <br />
-                                <br />
-                                Michael Knight a young loner on a crusade to champion the cause
-                                of the innocent. The helpless. The powerless in a world of
-                                criminals who operate above the law. Here he comes Here comes
-                                Speed Racer. He's a demon on wheels.
-                            </p>
-                        </div>
-                        <div>
-                            <p className="mb-4 text-xl font-medium">
-                                Galaxies Orion's sword globular star cluster?
-                            </p>
-                            <p className="text-gray-700">
-                                A business big enough that it could be listed on the NASDAQ goes
-                                belly up. Disappears!
-                                <br />
-                                <br />
-                                It ceases to exist without me. No, you clearly don't know who
-                                you're talking to, so let me clue you in.
-                            </p>
-                        </div>
-                        <div>
-                            <p className="mb-4 text-xl font-medium">
-                                When has justice ever been as simple as a rule book?
-                            </p>
-                            <p className="text-gray-700">
-                                This is not about revenge. This is about justice. A lot of
-                                things can change in twelve years, Admiral. Well, that's
-                                certainly good to know. About four years. I got tired of hearing
-                                how young I looked.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     );
 };
 
