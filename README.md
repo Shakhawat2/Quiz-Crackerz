@@ -1,4 +1,4 @@
-# This Website logo is JCH QUIZ CONTEST
+# This Website Name is JCH QUIZ CONTEST
 # Live website Link 
 https://assignment-9-quiz-projects.netlify.app/
 
@@ -6,7 +6,6 @@ https://assignment-9-quiz-projects.netlify.app/
 1. This Website is quiz question website 
 2. This website built in react and other built in package
 3. Total  Four topics in this website
-4. This website are fully responsive
-5. 
+4. This website are fully responsive 
 
 

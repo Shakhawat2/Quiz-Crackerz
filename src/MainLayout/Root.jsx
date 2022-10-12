@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 const Root = () => {
     AOS.init({
         // initialise with other settings
-        duration : 2000
+        duration : 1000
       });
     return (
         <div className=''>
