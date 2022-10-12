@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AllTopics from './AllTopics';
+
+// import Lottie from "lottie-react";
+// import reader from "../quiz.json";
 
 const Home = () => {
 
@@ -22,11 +24,11 @@ const Home = () => {
             </div>
           </div>
           <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-            <img src="assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+            <img src="https://img.freepik.com/free-vector/quiz-word-concept_23-2147844150.jpg?w=2000" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+            {/* <Lottie animationData={reader} loop={true}></Lottie> */}
           </div>
         </div>
       </section>
-    {/* <AllTopics></AllTopics> */}
     </div>
   );
 };
