@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import SingleQuiz from './SingleQuiz';
 
 const Quiz = () => {
@@ -11,6 +11,7 @@ const Quiz = () => {
             {
                 questions.map(question => <SingleQuiz questions={question} key={question.id}></SingleQuiz>)
             }
+            <Link to='/topics'><button className='bg-green-400 text-black p-3 text-lg mt-5 rounded-lg font-bold'>Go to Topics</button></Link>
         </div>
     );
 };

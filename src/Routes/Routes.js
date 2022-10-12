@@ -4,6 +4,7 @@ import Blog from "../components/Blog";
 import Error from "../components/Error";
 import Home from "../components/Home";
 import Quiz from "../components/Quiz";
+import Statistic from "../components/Statistic";
 import Root from "../MainLayout/Root";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -35,6 +36,11 @@ export const router = createBrowserRouter([
             {
                 path : 'blog',
                 element : <Blog></Blog>
+            },
+            {
+                path : 'statistic',
+                loader : () => fetch('https://openapi.programming-hero.com/api/quiz'),
+                element : <Statistic></Statistic>
             },
             {
                 path : 'about',

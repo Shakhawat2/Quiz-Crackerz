@@ -3,7 +3,8 @@ import React from 'react';
 import { toast } from 'react-toastify';
 import Options from './Options';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faEye } from '@fortawesome/free-solid-svg-icons'
+  import { faEye } from '@fortawesome/free-solid-svg-icons';
+  import './Singlequiz.css'
 
 const SingleQuiz = ({questions}) => {
     const {correctAnswer, id, options, question} = questions;
@@ -13,7 +14,7 @@ const SingleQuiz = ({questions}) => {
     const eyeIcon = () =>{
         toast(`Answer : ${correctAnswer}`, {autoClose : 3000})
     }
-    const handleIsRight = (answer) =>{
+    const handleIsRight = (answer, value1) =>{
         if(correctAnswer === answer){
             toast.success('Right answer', {autoClose : 500})
         }else{
