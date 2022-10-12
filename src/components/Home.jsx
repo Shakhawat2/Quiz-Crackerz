@@ -1,58 +1,30 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
-import Topics from './Topics';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-    const category = useLoaderData();
-    const topics = category.data;
-    return (
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <div>
-            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-              
-            </p>
-          </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            <span className="relative inline-block">
-              <svg
-                viewBox="0 0 52 24"
-                fill="currentColor"
-                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-              >
-                <defs>
-                  <pattern
-                    id="9a29985a-fc16-419b-ae53-1670f5ca4491"
-                    x="0"
-                    y="0"
-                    width=".135"
-                    height=".30"
-                  >
-                    <circle cx="1" cy="1" r=".7" />
-                  </pattern>
-                </defs>
-                <rect
-                  fill="url(#9a29985a-fc16-419b-ae53-1670f5ca4491)"
-                  width="52"
-                  height="24"
-                />
-              </svg>
-              <span className="relative">The</span>
-            </span>{' '}
-            quick, brown fox jumps over a lazy dog
-          </h2>
-          <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+
+
+  return (
+    <section className="dark:bg-gray-800 dark:text-gray-100">
+      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+          <h1 className="text-5xl font-bold leading-none sm:text-6xl">Ac mattis
+            <span className="dark:text-violet-400">senectus</span>erat pharetra
+          </h1>
+          <p className="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
+            <br className="hidden md:inline lg:hidden"/>turpis pulvinar, est scelerisque ligula sem
           </p>
+          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <Link rel="noopener noreferrer" to="/topics" className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Go to Topics</Link>
+            <Link rel="noopener noreferrer" href="/about" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Learn More</Link>
+          </div>
         </div>
-        <div className="grid max-w-screen-lg gap-8 row-gap-5 mb-8 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto">
-          {
-            topics.map(tp => <Topics topic={tp} key={tp.id}></Topics>)
-          }          
+        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <img src="assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
         </div>
       </div>
-    );
-  };
+    </section>
+  );
+};
 
 export default Home;

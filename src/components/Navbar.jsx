@@ -29,6 +29,16 @@ const Navbar = () => {
                             Home
                         </NavLink>
                     </li>
+                    <li className=''>
+                        <NavLink
+                            to="/topics"
+                            aria-label="Topics"
+                            title="Topics"
+                            className={({ isActive }) => isActive ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 text-deep-purple-accent-400 underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4" : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:underline decoration-blue-600 decoration-solid decoration-4 underline-offset-4"}
+                        >
+                            Topics
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink
                             to="/statistic"
