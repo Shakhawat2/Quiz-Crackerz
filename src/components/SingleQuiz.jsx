@@ -22,7 +22,7 @@ const SingleQuiz = ({questions}) => {
         }
     }
     return (
-        <div className=' rounded-lg  bg-slate-100 shadow-lg border-blue-500 w-2/4 mx-auto mt-10 text-center p-5'>
+        <div data-aos="zoom-in-up" className=' rounded-lg  bg-slate-100 shadow-lg border-blue-500 w-2/4 mx-auto mt-10 text-center p-5'>
             <div className='flex justify-between items-center'>
                 <h1 className='text-xl '>{newQuestion}</h1>
                 <FontAwesomeIcon onClick={() => eyeIcon()} icon={faEye} className='text-green-500 cursor-pointer'/>
