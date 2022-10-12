@@ -29,7 +29,7 @@ const SingleQuiz = ({questions}) => {
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6'>
                 {
-                    options.map((op, idx) => <Options op={op} key={idx} handleIsRight={handleIsRight}></Options>)
+                    options.map((op, idx) => <Options id={id} op={op} key={idx} handleIsRight={handleIsRight}></Options>)
                 }
             </div>
         </div>
